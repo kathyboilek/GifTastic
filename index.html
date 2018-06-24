@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GifTastic</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+                <div class="jumbotron">
+                    <h1>Giftastic!</h1>
+                </div>
+                    <div class="row" id="gifContainer">
+                      <!-- Response gif's go here -->
+                    </div>
+                        <div class='row'>
+                            <div class="col-xs-12">
+                                <button class='btn btn-default center-block' id='buttonMore'>More Gif's...</button>
+                            </div>
+                        </div>
+            </div>
+          
+            <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+                <div class="input-group">
+                    <input type="text" id="inputField" class="form-control" placeholder="Search Gifs...">
+                        <span class="input-group-btn">
+                          <button class="btn btn-default" id="searchButton" type="button">Submit</button>
+                        </span>
+                </div>
+                <hr>
+                    <div>
+                        <p>Recent Searches</p>
+                            <div class="list-group" id="recentSearches">
+                              <!-- Search items go here -->
+                            </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Current Topics</p>
+                            <div class="list-group" id="currentTopics">
+                              <!-- Search items go here -->
+                            </div>
+                    </div>
+            </div>
+        </div>
+                  
+    </div>
+          
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/giftastic.js"></script>
+  
+</body>
+</html>
